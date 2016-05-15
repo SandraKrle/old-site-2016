@@ -1,21 +1,426 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Sandra Krle Portfolio</title>
-<link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="home.css" type="text/css" />
-<script type="text/javascript" src="home.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <title>Sandra Krle - Portfolio</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/animation-circles.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
 </head>
-<body>
-<div id="container">
-	<img src="photo.jpg">
-	<nav>
-		<span id="me" class="selected">me</span> / <span id="skills">skills</span> / <span id="projects">projects</span> / <span id="contacts">contacts</span> / <span id="summary">summary</span>
-	</nav>
-	<p id="texts">
-		Hej! My name is <span name="summary">Sandra Krle. I am a Junior Frontend Developer, based in Stockholm, Sweden.</span> I originally come from Macedonia. For a long time I used to work as Business Controller in large corporations, but not anymore. With the help of online courses I taught myself how to build webpages. So now, after all that studying I am <span name="summary">looking for a position as an Intern in Frontend Development.</span> You could say that I have a sound knowledge of <span name="skills">HTML, CSS, JavaScript and JQuery</span> and presently I am mastering <span name="skills">AngularJS.</span> Some of my work can be found at<a href="http://codepen.io/sandrakrle/"><span name="projects"> Codepen </span></a> and <a href="https://se.linkedin.com/in/sandrakrle
-"><span name="projects">LinkedIn.</span> I am still working on building my portfolio. As a person I am smart, fast-learning and easy-going. Please <span name="summary">contact me</span> at <a href="mailto: &#115;&#097;&#110;&#100;&#114;&#097;&#046;&#107;&#114;&#108;&#108;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><span name="contacts">&#115;&#097;&#110;&#100;&#114;&#097;&#046;&#107;&#114;&#108;&#108;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</span></a><span name="summary">if you are looking for Frontend Development Interns.</span>
-	</p>
-	<footer><a href="#">www.sandrakrle.com</a></footer>
-</div>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top"><img alt="Brand" src="img/sk-logo.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="profile-img img-responsive" src="img/profile.jpg" alt="">
+                    <div class="intro-text">
+                        <span class="name">Sandra Krle</span>
+                        <hr class="star-light">
+                        <span class="skills">Front End Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <p>My work for FundedByMe</p>
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/fundedbyme-portfolio.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <p>My old portfolio page</p>
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/oldportfolio-portfolio.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <p>Some learning projects</p>
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/radomprojects-portfolio.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About me</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <p>
+                Hi! I am a Junior Front End Developer, based in Stockholm, Sweden, originally from Skopje, Macedonia. 
+                I create clean, semantic and standards-compliant HTML, CSS and JavaScript. I write code that is modular, 
+                efficient, and easy to understand by other developers, plus I write excellent documentation. Also, most 
+                importantly I enjoy and find it important to make sites responsive for all screen sizes and devices.
+            </p>
+            <p>
+                I have a long professional and educational background in finance, and I worked as a Business controller 
+                for 4 years. But ever since I switched to coding I feel like I have found my true calling because the tech development environment is so exciting and I enjoy collaborating with back end developers and product designers to create something that end user enjoy to use. I get back so much more than juggling financial numbers.
+            </p>
+            <p>
+                I am a self-taught coder, through courses online such as Coursera, Codecademy, Free Code Camp and many more. My mentor is also my husband who is a software engineer. My first internship as a Front End Developer was at the very exiting start up <a href="https://www.fundedbyme.com/"><span class="bold">FundedByMe</span></a> where I developed my coding skills even more and enjoyed working in a team with other developers, business developers and salespeople.
+            </p>
+            <p>
+                Here is a list of technologies I've use both professionally and in private projects:
+            </p>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h4>JavaScript tech</h4>
+                    <ul>
+                        <li>JQuery</li>
+                        <li>JQueri UI</li>
+                        <li>Angular JS</li>
+                        <li>Bootstrap</li>
+                        <li>Handlebars</li>
+                        <li>Mustache</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h4>CSS frameworks and preprocessors</h4>
+                    <ul>
+                        <li>Sass/Scss</li>
+                        <li>Stylus</li>
+                        <li>Bootstrap</li>
+                        <li>Bourbon/Neat/Bitters/Refills</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h4>Backend tech</h4>
+                    <ul>
+                        <li>Django templating</li>
+                        <li>Ruby on Rails</li>
+                    </ul>
+                </div>
+            </div>
+            <p>
+                Now I am looking to step up my game and become a Front End expert. Eventually, I see myself as a full stack developer as I constantly want to keep learning. Want to hire me? Yes. Yes, you do ;)
+            </p>
+        </div>
+    </section>
+        <div class="container">
+            <p class="mv">Here are some fancy-shmancy skills animations</p>
+            <div class="row mv">
+                <!-- HTML Chart -->
+                <div class="col-sm-4">
+                    <figure class="chart" data-percent="75">
+                        <figcaption>HTML</figcaption>
+                        <svg width="200" height="200">
+                            <circle id="html" class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                        </svg>
+                    </figure>
+                </div>
+
+                <!-- CSS Chart -->
+                <div class="col-sm-4">
+                    <figure class="chart" data-percent="75">
+                        <figcaption>CSS</figcaption>
+                        <svg width="200" height="200">
+                            <circle id="css" class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                        </svg>
+                    </figure>
+                </div>
+
+                <!-- Javascript Chart -->
+                <div class="col-sm-4">
+                    <figure class="chart" data-percent="50">
+                        <figcaption>JS</figcaption>
+                        <svg width="200" height="200">
+                            <circle id="javascript" class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                        </svg>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Me</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <form method="POST" action="https://formspree.io/sandra88@email.com"  name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" name="_replyto" class="form-control" placeholder="Your Email Address" required=""data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <textarea name="message" rows="5" required="" class="form-control" placeholder="Your Message" data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-6">
+                        <h5>Location</h5>
+                        <p>Stockholm, Sweden</p>
+                    </div>
+                    <div class="footer-col col-md-6">
+                        <h5>Look me up on Linkedin</h5>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://se.linkedin.com/in/sandrakrle" class="btn-social btn-outline">
+                                    <i class="fa fa-fw fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">Sandra Krle 2016</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button  -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>My work at FundedByMe</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/fundedbyme-portfolio.png" class="img-responsive img-centered" alt="">
+                            <div class="modal-text">
+                                <p>My internship at <a href="http://fundedbyme.com">FundedByMe</a> was a time of intense learning
+                                with focus on mastering my Sass and JavaScript skills. <a href="http://fundedbyme.com/en/borrow-money/">This</a> is an example of a page I did. Bellow you can
+                                read about all my work engagements:</p>
+                                <ul>
+                                    <li>Modifying the markup and styles of the existing project to fit new features</li>
+                                    <li>Working with Sketch and InVission files from the UX designer to build new layouts</li>
+                                    <li>Implementing new pieces of interactivity using vanila JavaScript and jQuery</li>
+                                    <li>Coordinating with the back-end developer to integrate my HTML page templates into the web application</li>
+                                    <li>Investigating and resolving reported bugs ranging from small text edits to image updates to JavaScript errors
+                                        to display inconsistencies.</li>
+                                </ul>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong><a href="http://fundedbyme.com">FundedByMe</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:  <strong>April-July 2016</strong></li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>My old portfolio page</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/oldportfolio-portfolio.jpg" class="img-responsive img-centered" alt=""></a>
+                            <div class="modal-text">
+                                <p><a href="oldportfolio/oldportfolio.html">This</a> was my first serious attempt at creating my own page. At that time I
+                                    didn't have much to show for, so I kept the code simple. It landed me my first
+                                    Internship.</p>
+                                <p>Date:  <strong>February 2016</strong></p>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Various projects</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/radomprojects-portfolio.jpg" class="img-responsive img-centered" alt="">
+                            <div class="modal-text">
+                                <p>Here are some projects that I did in my learning days:</p>
+                                <ul>
+                                    <li><a href="http://codepen.io/sandrakrle/pens/public/">CodePen</a></li>
+                                    <li><a href="https://www.codecademy.com/rubyCoder24831">Codecademy Profile</a></li>
+                                    <li><a href="https://www.freecodecamp.com/sandrakrle">Free Code Camp Profile</a></li>
+                                </ul>
+                                <ul class="list-inline item-details">
+                                    <li>Date:
+                                        <strong>December 2015</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
 </body>
 </html>

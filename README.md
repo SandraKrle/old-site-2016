@@ -1,2 +1,1 @@
-# sandrakrle.github.io
-Sandra Krle Portfolio
+Portfolio web page for Sandra Krle - Front End Developer
