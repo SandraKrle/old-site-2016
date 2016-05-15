@@ -294,8 +294,8 @@ section.success a.active {
 
 .floating-label-form-group {
     position: relative;
-    margin-bottom: 0;
-    padding-bottom: .5em;
+    margin-bottom: 0px;
+	margin-top: 0px;
     border-bottom: 1px solid #eee;
 }
 

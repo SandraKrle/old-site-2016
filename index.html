@@ -231,29 +231,28 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <form method="POST" action="https://formspree.io/sandra88@email.com"  name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" name="_replyto" class="form-control" placeholder="Your Email Address" required="" id="email" data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea name="message" rows="5" required="" class="form-control" placeholder="Your Message" id="message" data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
+                    <form action="https://formspree.io/sandra88@gmail.com" method="POST">
+						<div class="row control-group">
+							<div class="form-group col-xs-6 col-xs-offset-3 floating-label-form-group controls">
+								<input type="text" name="name" placeholder="Your name">
+							</div>
+						</div>
+						<div class="row control-group">
+                            <div class="form-group col-xs-6 col-xs-offset-3 floating-label-form-group controls">
+								<input type="email" name="_replyto" placeholder="Your email">
+							</div>
+						</div>
+						<div class="row control-group">
+                            <div class="form-group col-xs-6 col-xs-offset-3 floating-label-form-group controls">
+								<textarea name="message" rows="5" placeholder="Your message" required=""></textarea>	
+							</div>
+						</div>
+						<div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+								<input type="submit" value="Send" class="btn btn-success">
                             </div>
                         </div>
-                    </form>
+					</form>
                 </div>
             </div>
         </div>
@@ -417,7 +416,6 @@
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
